@@ -7,11 +7,6 @@ public class InclusiveThreeNumbers {
         int b = sc.nextInt();
         int c = sc.nextInt();
 
-        if((a>=b && a<=c) || (a>=c && a<=b) ){
-            System.out.println(true);
-        }
-        else{
-            System.out.println(false);
-        }
+        System.out.println((a >= b && a <= c) || (a >= c && a <= b));
     }
 }
