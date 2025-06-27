@@ -9,6 +9,7 @@ public class GradeCount {
         int C_count = 0;
         int B_count = 0;
         int A_count = 0;
+        int others_cnt = 0;
 
         for(int i = 1; i <= n; i++){
             char grade = sc.next().charAt(0);
@@ -24,7 +25,10 @@ public class GradeCount {
             if(grade=='A') {
                 A_count++;
             }
+            else{
+                others_cnt++;
+            }
         }
-        System.out.println((D_count+" "+C_count+" "+B_count+" "+A_count));
+        System.out.println((D_count+" "+C_count+" "+B_count+" "+A_count+" "+others_cnt));
     }
 }
