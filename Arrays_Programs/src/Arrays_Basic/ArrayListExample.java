@@ -7,7 +7,7 @@ public class ArrayListExample {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         //Syntax
-        ArrayList<Integer> list = new ArrayList<Integer>(10);
+        ArrayList<Integer> list = new ArrayList<>(10);
         // Integer is wrapper class( we cant use primitives here).
         // internally size is fixed
         // say arraylist fills by some amount
@@ -35,8 +35,8 @@ public class ArrayListExample {
         for(int i=0;i<list.size();i++){
             list.add(sc.nextInt());
         }
-        for(int i=0;i<list.size();i++){
-            System.out.println(list.get(i)); //pass index here list of index syntax will not work here
+        for (Integer integer : list) {
+            System.out.println(integer); //pass index here list of index syntax will not work here
         }
     }
 }
