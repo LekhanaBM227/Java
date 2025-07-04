@@ -1,5 +1,3 @@
-package SamplePrograms;
-
 import java.util.Scanner;
 
 public class EvenNumSkip10 {
